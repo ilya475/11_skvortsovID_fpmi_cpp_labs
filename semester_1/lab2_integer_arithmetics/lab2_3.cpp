@@ -1,25 +1,21 @@
-﻿#include <iostream>
+#include <iostream>
 
-int main()
-{
-    setlocale(LC_ALL, "RU");
-    std::cout << "Введите натуральное число: ";
+int main() {
+    std::cout << "Enter a natural number: ";
     int num_n, n, mod;
-    std::cin >> n;
-    int min_num = 9; //начинаем с максимальной цифры
-    if (!std::cin >> n || n<=0) {
+    int min_num = 9; // starting from the biggest number - 9
+    if (!(std::cin >> n) || n <= 0) {
         std::cout << "Error";
-    std::exit(1);
+        return 1;
     }
-    num_n = n; // в num_n мы записываем число, равное n
-    while (n > 0) {
+    num_n = n; // num_n is a number = n
+    while (n) {
         mod = n % 10;
-        if (mod !=0 && mod < min_num)
+        if (mod != 0 && mod < min_num) {
             min_num = mod;
+        }
         n /= 10;
-
-  }
-    
-    std::cout << "Новое число: " << min_num << num_n << min_num;
+    }
+    std::cout << "New number: " << min_num << num_n << min_num;
     return 0;
 }
