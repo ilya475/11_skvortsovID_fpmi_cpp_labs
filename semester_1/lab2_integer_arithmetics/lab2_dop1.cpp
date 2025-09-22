@@ -23,3 +23,5 @@ int main() {
 	}
 	return 0;
 }
+// INT_MIN breaks everything because we go beyond the boundaries of the data type
+
