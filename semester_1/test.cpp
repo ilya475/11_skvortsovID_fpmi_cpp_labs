@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <cmath>
 const int N = 1000;
 void bubblesort(int* mas, int number_of_elements) {
@@ -12,8 +12,8 @@ void bubblesort(int* mas, int number_of_elements) {
         }
     }
 }
-void printmas(int* mas, int number_ofelements) {
-    for (int i = 0; i < N; i++) {
+void printmas(int* mas, int number_of_elements) {
+    for (int i = 0; i < number_of_elements; i++) {
         std::cout << mas[i] << " ";
     }
 }
