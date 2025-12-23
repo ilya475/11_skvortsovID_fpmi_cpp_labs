@@ -91,29 +91,29 @@ int main() {
         std::cout << "Amoumt of number 9: " << FindAmountOfCurrentAmount(vec, 9) << std::endl;
         std::cout << "Amount of numbers bigger than 9: " << BiggerThanCurrent(9, vec) << std::endl;
 
-            std::vector<int> copy1 = vec;
-            ArithmeticMeanToZeros(copy1);
+            std::vector<int> copy = vec;
+            ArithmeticMeanToZeros(copy);
             std::cout << "Vector with 0 elements + avg: " << std::endl;
-            PrintVector(copy1);
-            copy1.clear();
+            PrintVector(copy);
+            copy.clear();
 
-            std::vector<int> copy2 = vec;
-            AddFromInterval(copy2, 5, 7);
+            copy = vec;
+            AddFromInterval(copy, 5, 7);
             std::cout << "Vector with elements + sum of interval: " << std::endl;
-            PrintVector(copy2);
-            copy2.clear();
+            PrintVector(copy);
+            copy.clear();
         
-            std::vector<int> copy3 = vec;
-            ReplaceOddWithMinAndMax(copy3);
+            copy = vec;
+            ReplaceOddWithMinAndMax(copy);
             std::cout << "Vector with changed odd numbers: " << std::endl;
-            PrintVector(copy3);
-            copy3.clear();
+            PrintVector(copy);
+            copy.clear();
 
-            std::vector<int> copy4 = vec;
-            DeleteexceptFirst(copy4);
+            copy = vec;
+            DeleteexceptFirst(copy);
             std::cout << "Vector without repeating: ";
-            PrintVector(copy4);
-            copy4.clear();
+            PrintVector(copy);
+            copy.clear();
         return 0;
     }
     catch (const char* msg) {
